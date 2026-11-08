@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.wdb
+*.vcd
+*.jou
+*.log
+xsim.dir/
+.Xil/
+results/selected_summary.*

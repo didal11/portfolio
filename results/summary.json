@@ -1,0 +1,100 @@
+{
+  "started_at_utc": "2026-11-08T10:10:11.631963+00:00",
+  "suite": "full",
+  "simulator": "Vivado XSim",
+  "input_sha256": {
+    "rtl/baud_tick_gen.v": "e96a0f2ff32ed00b77f51df2e6fda90b540acd771e9d9b2df14af94083f9e192",
+    "rtl/fifo.v": "48b15edf1da4a73aae5244f829b3cdb34e38cac7e152cd1fff6551589b28a5b1",
+    "rtl/response_arbiter.v": "6e9592d6d2d47edc0163b1e05eb65e8ed6d660810683b54ddb4533690a9f5ec2",
+    "rtl/response_packetizer.v": "8541f74e6de0ec6606d887c2c7da0778f8dd69fab3cb3c3d7f562139af9ec8fa",
+    "rtl/uart_interface.v": "3f41796f654d532bd1176df1fae5c246e09722d1cfd9885fa0f2bac57ba7fdea",
+    "rtl/uart_rx.v": "8f28df2f6fbdffb132ba6dd637713b9be6d75df5209bb8850cde34c35a6154e9",
+    "rtl/uart_tx.v": "a85f96f26fbf087922a51435869e33e9841f92378443fcdc40eb57105f5101b7",
+    "tb/tb_almost_compare.v": "716dac3630be9eb631daeddef452bd6f65df8cb776408511ad87dcada07af8b7",
+    "tb/tb_arbiter_control.v": "1a85bd278d77959cc27f8a89b4b902e74ec64ef4050ac623b1e1fba7eec24016",
+    "tb/tb_ascii_check.v": "5e558f65b294be3f493e1d1bb1812c89e9e9356515ec738d344eb151f419b346",
+    "tb/tb_double_dabble_check.v": "1158f403a03dd8503dec543fd3192fb4a124bd1073a2237511d5af243d89ebed",
+    "tb/tb_frame_check.v": "a3c775a51f29a260cb45f54005356b7f8a319d9bbc8a38d09abb77cde6eb85fb",
+    "tb/tb_packetizer_distance.v": "6c1e64f6252a5b4473499ad5084d553b4490cc1f01ddbd0d89cc568eaedcef5e",
+    "tb/tb_packetizer_error_fsm.v": "974b5b7098957d3e98efc1ec7fc077ed5e17826d57d58567ed7299ef4fc05887",
+    "tb/tb_packetizer_stall.v": "4e13d70bae12b53863184d8600183e95ff31f57e6384e5120a75669a05351cff",
+    "tb/tb_tx_e2e_auto.v": "7f7fde410f7c3501c1d358fa9279c829770b295e75cf59b05ac81fd172ffa010",
+    "tb/tb_tx_fifo_flow.v": "03041250ff53b4d8c837b46a97cc9813a54d4c5ac2cf84e09f09f019a176c909",
+    "run.py": "732c81d706f22c1d67af9882f1ea7946f0f259e3ec442e9af18e686949e584d3"
+  },
+  "tests": [
+    {
+      "name": "tb_almost_compare",
+      "passed": true,
+      "result_lines": [
+        "RESULT saved=32/32 dropped=1/0"
+      ]
+    },
+    {
+      "name": "tb_arbiter_control",
+      "passed": true,
+      "result_lines": [
+        "RESULT ARBITER_CONTROL writes=13 reads=13 fail=0"
+      ]
+    },
+    {
+      "name": "tb_ascii_check",
+      "passed": true,
+      "result_lines": [
+        "RESULT ASCII total=417 pass=417 fail=0"
+      ]
+    },
+    {
+      "name": "tb_double_dabble_check",
+      "passed": true,
+      "result_lines": [
+        "RESULT DD total=512 pass=512 fail=0"
+      ]
+    },
+    {
+      "name": "tb_frame_check",
+      "passed": true,
+      "result_lines": [
+        "RESULT FRAME total=416 pass=416 fail=0"
+      ]
+    },
+    {
+      "name": "tb_packetizer_distance",
+      "passed": true,
+      "result_lines": [
+        "RESULT DISTANCE bytes=15 errors=0"
+      ]
+    },
+    {
+      "name": "tb_packetizer_error_fsm",
+      "passed": true,
+      "result_lines": [
+        "RESULT ERROR bytes=22 errors=0 state=0"
+      ]
+    },
+    {
+      "name": "tb_packetizer_stall",
+      "passed": true,
+      "result_lines": [
+        "RESULT PACKETIZER STALL errors=0"
+      ]
+    },
+    {
+      "name": "tb_tx_e2e_auto",
+      "passed": true,
+      "result_lines": [
+        "RESULT E2E normal=20 error=8 packets=28 failed_packets=0 expected_bytes=504 received_bytes=504 fail=0",
+        "FINAL RESULT: PASS"
+      ]
+    },
+    {
+      "name": "tb_tx_fifo_flow",
+      "passed": true,
+      "result_lines": [
+        "RESULT TX_FIFO_FLOW bytes=14 errors=0"
+      ]
+    }
+  ],
+  "passed": true,
+  "finished_at_utc": "2026-11-08T10:13:29.347038+00:00"
+}

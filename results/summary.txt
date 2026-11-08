@@ -1,0 +1,45 @@
+Suite: full
+Started (UTC): 2026-11-08T10:10:11.631963+00:00
+
+tb_almost_compare
+RESULT saved=32/32 dropped=1/0
+CHECK: PASS
+
+tb_arbiter_control
+RESULT ARBITER_CONTROL writes=13 reads=13 fail=0
+CHECK: PASS
+
+tb_ascii_check
+RESULT ASCII total=417 pass=417 fail=0
+CHECK: PASS
+
+tb_double_dabble_check
+RESULT DD total=512 pass=512 fail=0
+CHECK: PASS
+
+tb_frame_check
+RESULT FRAME total=416 pass=416 fail=0
+CHECK: PASS
+
+tb_packetizer_distance
+RESULT DISTANCE bytes=15 errors=0
+CHECK: PASS
+
+tb_packetizer_error_fsm
+RESULT ERROR bytes=22 errors=0 state=0
+CHECK: PASS
+
+tb_packetizer_stall
+RESULT PACKETIZER STALL errors=0
+CHECK: PASS
+
+tb_tx_e2e_auto
+RESULT E2E normal=20 error=8 packets=28 failed_packets=0 expected_bytes=504 received_bytes=504 fail=0
+FINAL RESULT: PASS
+CHECK: PASS
+
+tb_tx_fifo_flow
+RESULT TX_FIFO_FLOW bytes=14 errors=0
+CHECK: PASS
+
+FINAL RESULT: PASS
